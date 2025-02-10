@@ -1,0 +1,19 @@
+public final class leakcanary/HotSpotHeapDumper : leakcanary/HeapDumper {
+	public static final field INSTANCE Lleakcanary/HotSpotHeapDumper;
+	public fun dumpHeap (Ljava/io/File;)V
+}
+
+public final class leakcanary/HotSpotHeapDumperKt {
+	public static final fun forJvmInProcess (Lleakcanary/HeapDumper$Companion;)Lleakcanary/HotSpotHeapDumper;
+}
+
+public final class leakcanary/RepeatingJvmInProcessScenarioKt {
+	public static final fun repeatingJvmInProcessScenario (Lshark/HeapDiff$Companion;Lshark/ObjectGrowthDetector;Lleakcanary/HeapDumpDirectoryProvider;Lleakcanary/HeapDumper;Lleakcanary/HeapDumpStorageStrategy;)Lshark/RepeatingScenarioObjectGrowthDetector;
+	public static synthetic fun repeatingJvmInProcessScenario$default (Lshark/HeapDiff$Companion;Lshark/ObjectGrowthDetector;Lleakcanary/HeapDumpDirectoryProvider;Lleakcanary/HeapDumper;Lleakcanary/HeapDumpStorageStrategy;ILjava/lang/Object;)Lshark/RepeatingScenarioObjectGrowthDetector;
+}
+
+public final class leakcanary/RepositoryRootHeapDumpDirectoryProvider : leakcanary/HeapDumpDirectoryProvider {
+	public fun <init> (Ljava/lang/String;)V
+	public fun heapDumpDirectory ()Ljava/io/File;
+}
+

@@ -34,3 +34,12 @@ out
 
 # Finder
 .DS_Store
+
+# Docs
+site
+
+# Generated dokka
+docs/api
+
+# Python virtual env
+venv

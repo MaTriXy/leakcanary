@@ -1,0 +1,63 @@
+public final class leakcanary/ActivityWatcher : leakcanary/InstallableWatcher {
+	public fun <init> (Landroid/app/Application;Lleakcanary/DeletableObjectReporter;)V
+	public fun <init> (Landroid/app/Application;Lleakcanary/ReachabilityWatcher;)V
+	public fun install ()V
+	public fun uninstall ()V
+}
+
+public final class leakcanary/AppWatcher {
+	public static final field INSTANCE Lleakcanary/AppWatcher;
+	public final fun appDefaultWatchers (Landroid/app/Application;Lleakcanary/DeletableObjectReporter;)Ljava/util/List;
+	public static synthetic fun appDefaultWatchers$default (Lleakcanary/AppWatcher;Landroid/app/Application;Lleakcanary/DeletableObjectReporter;ILjava/lang/Object;)Ljava/util/List;
+	public final fun getObjectWatcher ()Lleakcanary/ObjectWatcher;
+	public final fun getRetainedDelayMillis ()J
+	public final fun isInstalled ()Z
+	public final fun manualInstall (Landroid/app/Application;)V
+	public final fun manualInstall (Landroid/app/Application;J)V
+	public final fun manualInstall (Landroid/app/Application;JLjava/util/List;)V
+	public static synthetic fun manualInstall$default (Lleakcanary/AppWatcher;Landroid/app/Application;JLjava/util/List;ILjava/lang/Object;)V
+}
+
+public final class leakcanary/FragmentAndViewModelWatcher : leakcanary/InstallableWatcher {
+	public static final field Companion Lleakcanary/FragmentAndViewModelWatcher$Companion;
+	public fun <init> (Landroid/app/Application;Lleakcanary/DeletableObjectReporter;)V
+	public fun install ()V
+	public fun uninstall ()V
+}
+
+public final class leakcanary/FragmentAndViewModelWatcher$Companion {
+}
+
+public abstract interface class leakcanary/InstallableWatcher {
+	public abstract fun install ()V
+	public abstract fun uninstall ()V
+}
+
+public final class leakcanary/RootViewWatcher : leakcanary/InstallableWatcher {
+	public fun <init> (Lleakcanary/DeletableObjectReporter;Lleakcanary/RootViewWatcher$Filter;)V
+	public synthetic fun <init> (Lleakcanary/DeletableObjectReporter;Lleakcanary/RootViewWatcher$Filter;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun <init> (Lleakcanary/ReachabilityWatcher;)V
+	public fun install ()V
+	public fun uninstall ()V
+}
+
+public abstract interface class leakcanary/RootViewWatcher$Filter {
+	public abstract fun shouldExpectDeletionOnDetached (Landroid/view/View;)Z
+}
+
+public final class leakcanary/RootViewWatcher$WindowTypeFilter : leakcanary/RootViewWatcher$Filter {
+	public fun <init> (Z)V
+	public fun shouldExpectDeletionOnDetached (Landroid/view/View;)Z
+}
+
+public final class leakcanary/ServiceWatcher : leakcanary/InstallableWatcher {
+	public static final field Companion Lleakcanary/ServiceWatcher$Companion;
+	public fun <init> (Lleakcanary/DeletableObjectReporter;)V
+	public fun <init> (Lleakcanary/ReachabilityWatcher;)V
+	public fun install ()V
+	public fun uninstall ()V
+}
+
+public final class leakcanary/ServiceWatcher$Companion {
+}
+

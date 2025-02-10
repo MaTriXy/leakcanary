@@ -1,0 +1,25 @@
+public final class leakcanary/AndroidDeviceTempHeapDumpDirectoryProvider : leakcanary/HeapDumpDirectoryProvider {
+	public fun <init> (Ljava/lang/String;)V
+	public fun heapDumpDirectory ()Ljava/io/File;
+}
+
+public final class leakcanary/RepeatingUiAutomatorScenarioKt {
+	public static final fun repeatingUiAutomatorScenario (Lshark/HeapDiff$Companion;Lshark/ObjectGrowthDetector;Ljava/lang/String;Lleakcanary/HeapDumpDirectoryProvider;Lleakcanary/HeapDumper;Lleakcanary/HeapDumpStorageStrategy;)Lshark/RepeatingScenarioObjectGrowthDetector;
+	public static synthetic fun repeatingUiAutomatorScenario$default (Lshark/HeapDiff$Companion;Lshark/ObjectGrowthDetector;Ljava/lang/String;Lleakcanary/HeapDumpDirectoryProvider;Lleakcanary/HeapDumper;Lleakcanary/HeapDumpStorageStrategy;ILjava/lang/Object;)Lshark/RepeatingScenarioObjectGrowthDetector;
+}
+
+public final class leakcanary/UiAutomatorShellFileDeleter {
+	public static final field INSTANCE Lleakcanary/UiAutomatorShellFileDeleter;
+	public final fun deleteFileUsingShell (Ljava/io/File;)V
+}
+
+public final class leakcanary/UiAutomatorShellHeapDumper : leakcanary/HeapDumper {
+	public fun <init> (ZLjava/lang/String;)V
+	public fun dumpHeap (Ljava/io/File;)V
+}
+
+public final class leakcanary/UiAutomatorShellHeapDumperKt {
+	public static final fun forUiAutomatorAsShell (Lleakcanary/HeapDumper$Companion;ZLjava/lang/String;)Lleakcanary/UiAutomatorShellHeapDumper;
+	public static synthetic fun forUiAutomatorAsShell$default (Lleakcanary/HeapDumper$Companion;ZLjava/lang/String;ILjava/lang/Object;)Lleakcanary/UiAutomatorShellHeapDumper;
+}
+
